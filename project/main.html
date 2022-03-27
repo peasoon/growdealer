@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" id="pageMain">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end of fonts -->
+    <title>Main</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-container">
+          <div class="header__logo">
+						<picture>
+							<source 
+							media="(max-width: 480px)"
+							srcset="./img/header/logo-mobile.svg">
+							<img src="./img/header/logo.svg" alt="Логотип комапании" />
+						</picture>
+          </div>
+          <div class="header__nav header-nav">
+            <ul class="header-nav__list hn-list">
+              <li class="hn-list__item">
+                <a href="#" class="hn-list__link">Наши продукты</a>
+                <ul class="hn-list__submenu hnl-submenu">
+                  <li class="hnl-submenu__item">
+                    <a href="#" class="hnl-submenu__link">Advanced Nutrients</a>
+                  </li>
+                  <li class="hnl-submenu__item">
+                    <a href="#" class="hnl-submenu__link">Magic Air</a>
+                  </li>
+                  <li class="hnl-submenu__item">
+                    <a href="#" class="hnl-submenu__link">Magic Cloud</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="hn-list__item">
+                <a href="#" class="hn-list__link">О компании</a>
+              </li>
+              <li class="hn-list__item">
+                <a href="#" class="hn-list__link">Отзывы</a>
+              </li>
+              <li class="hn-list__item">
+                <a href="#" class="hn-list__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="header-nav__phone">
+              <a href="tel:+78003605078">+7 (800) 360 50-78</a>
+            </div>
+						<div class="header-nav__burger hn-burger">
+							<img src="./img/header/burger.svg" alt="" class="hn-burger__img hn-burger__img_open">
+							<img src="./img/header/burger-close.svg" alt="" class="hn-burger__img hn-burger__img_close">
+						</div>
+          </div>
+        </div>
+      </header>
+      <main class="page-main">
+        <section class="supplier">
+          <div class="container supplier-container">
+            <div class="supplier__text supplier-text">
+              <div class="supplier-text__title">Ваш поставщик роста</div>
+              <buton class="btn-green supplier-text__cooperate"
+                >Сотрудничать</buton
+              >
+              <div class="supplier-text__icons st-icons">
+                <!-- item -->
+                <div class="st-icons__item">
+                  <svg><use xlink:href="./img/sprites.svg#facebook"></use></svg>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="st-icons__item">
+                  <svg>
+                    <use xlink:href="./img/sprites.svg#instagram"></use>
+                  </svg>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="st-icons__item">
+                  <svg><use xlink:href="./img/sprites.svg#telegram"></use></svg>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="st-icons__item">
+                  <svg><use xlink:href="./img/sprites.svg#youtube"></use></svg>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class="st-icons__item">
+                  <svg><use xlink:href="./img/sprites.svg#vk"></use></svg>
+                </div>
+                <!-- end of item -->
+              </div>
+            </div>
+            <div class="supplier__pic supplier-pic">
+              <img src="./img/supplier/bg-pic.png" alt="Рост поставок" />
+            </div>
+            <div class="supplier__message">
+              <svg><use xlink:href="./img/sprites.svg#message"></use></svg>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <div class="container">
+            <div class="products__titles products-titles">
+              <div class="products-titles__item">
+                <img src="./img/products/titles/01.svg" alt="Логотип бренда" />
+              </div>
+              <div class="products-titles__item">
+                <img src="./img/products/titles/02.svg" alt="Логотип бренда" />
+              </div>
+              <div class="products-titles__item">
+                <img src="./img/products/titles/03.svg" alt="Логотип бренда" />
+              </div>
+            </div>
+          </div>
+          <div class="products__items products-items">
+            <!-- item -->
+            <div class="products-items__item pi-item">
+              <div class="pi-item__image">
+                <img src="./img/products/items/01.jpg" alt="" />
+              </div>
+              <div class="pi-item__desc pii-desc">
+                <div class="pii-desc__title">
+                  Угольные фильтры <span>Magic Air 2.0</span>
+                </div>
+                <button class="btn-grey pii-desc__btn">Узнать больше</button>
+              </div>
+            </div>
+            <!-- end of item -->
+            <!-- item -->
+            <div class="products-items__item pi-item">
+              <div class="pi-item__image">
+                <img src="./img/products/items/02.jpg" alt="" />
+              </div>
+              <div class="pi-item__desc pii-desc">
+                <div class="pii-desc__title">
+                  Удобрения и стимуляторы <span>Advanced Nutrients</span>
+                </div>
+                <button class="btn-grey pii-desc__btn">Узнать больше</button>
+              </div>
+            </div>
+            <!-- end of item -->
+            <!-- item -->
+            <div class="products-items__item pi-item">
+              <div class="pi-item__image">
+                <img src="./img/products/items/03.jpg" alt="" />
+              </div>
+              <div class="pi-item__desc pii-desc">
+                <div class="pii-desc__title">
+                  Гроутенты <span>magic box</span>
+                </div>
+                <button class="btn-grey pii-desc__btn">Узнать больше</button>
+              </div>
+            </div>
+            <!-- end of item -->
+          </div>
+        </section>
+        <section class="cooperation">
+          <div class="cooperation__heading">
+            Чтобы получить доступ к ассортименту и начать с нами сотрудничество,
+            заполните форму и нажмите "Отправить"
+          </div>
+					<form class="cooperation__form cooperation-form" id ="cooperationForm">
+						<div class="cooperation-form__name">
+							<input type="text" placeholder="ФИО" id="cooperationFormName">
+						</div>
+						<div class="cooperation-form__mail">
+							<input type="text" placeholder="Электронная почта" id="cooperationFormMail">
+						</div>
+						<div class="cooperation-form__phone">
+							<input type="text" id="formPhone">
+						</div>
+						<div class="cooperation-form__message">
+							<textarea placeholder="Написать"></textarea>
+						</div>
+						<div class="cooperation-form__confirm">
+							Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных.
+						</div>
+						<div class="cooperation-form__contact cf-contact">
+							<button class="btn-green cf-contact__btn">Отправить</button>
+							<div class="cf-contact__text">
+								Напишите нам: <a href="#">sale@growdealer.ru</a>
+							</div>
+						</div>
+					</form>
+        </section>
+      </main>
+      <footer class="footer">
+				<div class="container footer-container">
+					<div class="footer__logo">
+						<img src="./img/footer/logo.svg" alt="Логотип">
+					</div>
+					<div class="footer__contacts footer-contacts">
+						<div class="footer-contacts__title">Контакты</div>
+						<ul class="footer-contacts__list">
+							<li><span>Телефон:</span> +7 (800) 360 50-78</li>
+							<li><span>WhatsApp:</span> +7 (969) 777 29-01</li>
+							<li><span>Эл. почта:</span> sale@growdealer.ru</li>
+							<li><span>Адрес:</span> ул. Монастырская, 95г</li>
+							<li><span>Время работы:</span> 10:00 — 18:00</li>
+						</ul>
+					</div>
+					<div class="footer__products footer-products">
+						<div class="footer-products__title">Наши продукты</div>
+						<ul class="footer-products__list">
+							<li><a href="#">Advanced Nutrients</a></li>
+							<li><a href="#">Magic Air</a></li>
+							<li><a href="#">Magic Cloud</a></li>
+						</ul>
+					</div>
+					<div class="footer__info footer-info">
+						<div class="footer-info__title">Информация</div>
+						<ul class="footer-info__list">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer__socials footer-socials">
+						<div class="footer-socials__item">
+							<svg><use xlink:href="./img/sprites.svg#facebook"></use></svg>
+						</div>
+						<div class="footer-socials__item">
+							<svg><use xlink:href="./img/sprites.svg#instagram"></use></svg>
+						</div>
+						<div class="footer-socials__item">
+							<svg><use xlink:href="./img/sprites.svg#telegram"></use></svg>
+						</div>
+						<div class="footer-socials__item">
+							<svg><use xlink:href="./img/sprites.svg#youtube"></use></svg>
+						</div>
+						<div class="footer-socials__item">
+							<svg><use xlink:href="./img/sprites.svg#vk"></use></svg>
+						</div>
+					</div>
+				</div>
+			</footer>
+    </div>
+		<script src="./scripts.js"></script>
+  </body>
+</html>

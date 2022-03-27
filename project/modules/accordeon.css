@@ -1,0 +1,96 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordeon__list .accordeon__control {
+  padding: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.accordeon__list .accordeon__control::marker {
+  display: none;
+  content: none;
+}
+
+.accordeon__list .accordeon__icon {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: gray;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.accordeon__list .accordeon__icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 3px;
+  background-color: black;
+  display: block;
+}
+
+.accordeon__list .accordeon__icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  display: block;
+}
+
+.accordeon__list .accordeon__content {
+  border: 1px solid black;
+  border-top-color: transparent;
+}
+
+.accordeon__list li.accordeon button.accordeon__control {
+  width: 100%;
+}
+
+.accordeon__list li.accordeon .accordeon__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0px 10px;
+  will-change: max-height;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.accordeon__list li.accordeon.open .accordeon__content {
+  opacity: 1;
+  padding: 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.accordeon__list li.accordeon.open .accordeon__icon {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}

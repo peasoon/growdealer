@@ -1,0 +1,183 @@
+@import "./_variables.scss";
+
+.product {
+  position: relative;
+  &__image {
+  }
+  &__text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .product-text {
+    &__logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 117%;
+      text-transform: uppercase;
+      span {
+        color: $Patina;
+      }
+    }
+  }
+}
+//end of section product----------------------------
+
+//section about-------------------------------------
+.about {
+  padding-top: 93px;
+  padding-bottom: 110px;
+  .about-container {
+    position: relative;
+    max-width: 1350px;
+  }
+  &__text {
+		//margin-bottom: 110px;
+  }
+  &__image {
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  &__info {
+    position: absolute;
+    top: 75px;
+    left: 67px;
+  }
+  .about-text {
+    &__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+      color: $mani-black;
+      max-width: 536px;
+      margin-bottom: 40px;
+    }
+    &__info {
+      padding-left: 206px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+			color: $Gray;
+			* + * {
+				margin-top: 20px;
+			}
+			ul {
+				li {
+					position: relative;
+					padding-left: 30px;
+					&::before {
+						content: "\2022";
+						position: absolute;
+						display: block;
+						right: calc(100% - 15px);
+						top: 0%;
+					}
+				}
+			}
+    }
+  }
+  .about-info {
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 117%;
+      text-transform: uppercase;
+      color: $Alabaster;
+      max-width: 424px;
+      margin-bottom: 19px;
+    }
+    &__desc {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 117%;
+      color: $Alabaster;
+      max-width: 618px;
+      margin-bottom: 29px;
+    }
+    &__btn {
+      width: 218px;
+    }
+  }
+}
+//end of section about------------------------------
+
+//section slider------------------------------------
+.slider {
+  &__content {
+  }
+
+  .container {
+  }
+  .slider-content {
+    display: flex;
+    justify-content: space-between;
+    height: 543px;
+    &__thumbs {
+      width: 10%;
+    }
+    &__main {
+      width: 83.2%;
+      border: 1px solid red;
+    }
+  }
+  .sc-thumbs {
+    //overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__slider {
+      height: 74%;
+      border: 1px solid green;
+      //position: relative;
+    }
+    .swiper-wrapper {
+      height: 100%;
+    }
+    &__slide {
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .sc-thumbs-prev {
+      background: red !important;
+      top: 0;
+      transform: translateY(0);
+      margin: 0;
+      left: 0;
+    }
+    .sc-thumbs-next {
+      background: red !important;
+      top: unset;
+      bottom: 0;
+      transform: translateY(0);
+      margin: 0;
+      left: 0;
+    }
+  }
+  .sc-main {
+    &__slider {
+      width: 100%;
+      height: 100%;
+    }
+    &__slide {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

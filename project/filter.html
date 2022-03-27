@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" id="pageFilter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end of fonts -->
+    <title>Filter</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-container">
+          <div class="header__logo">
+            <picture>
+              <source
+                media="(max-width: 480px)"
+                srcset="./img/header/logo-mobile.svg"
+              />
+              <img src="./img/header/logo.svg" alt="Логотип комапании" />
+            </picture>
+          </div>
+          <div class="header__nav header-nav">
+            <ul class="header-nav__list hn-list">
+              <li class="hn-list__item">
+                <a href="#" class="hn-list__link">Наши продукты</a>
+                <ul class="hn-list__submenu hnl-submenu">
+                  <li class="hnl-submenu__item">
+                    <a href="#" class="hnl-submenu__link">Advanced Nutrients</a>
+                  </li>
+                  <li class="hnl-submenu__item">
+                    <a href="#" class="hnl-submenu__link">Magic Air</a>
+                  </li>
+                  <li class="hnl-submenu__item">
+                    <a href="#" class="hnl-submenu__link">Magic Cloud</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="hn-list__item">
+                <a href="#" class="hn-list__link">О компании</a>
+              </li>
+              <li class="hn-list__item">
+                <a href="#" class="hn-list__link">Отзывы</a>
+              </li>
+              <li class="hn-list__item">
+                <a href="#" class="hn-list__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="header-nav__phone">
+              <a href="tel:+78003605078">+7 (800) 360 50-78</a>
+            </div>
+            <div class="header-nav__burger hn-burger">
+              <img
+                src="./img/header/burger.svg"
+                alt=""
+                class="hn-burger__img hn-burger__img_open"
+              />
+              <img
+                src="./img/header/burger-close.svg"
+                alt=""
+                class="hn-burger__img hn-burger__img_close"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page-filter">
+        <section class="product">
+          <div class="product__image">
+            <img src="./img/page-filter/product/filter.jpg" alt="Фото товара" />
+          </div>
+          <div class="product__text product-text">
+            <div class="product-text__logo">
+              <img src="./img/page-filter/product/logo.svg" alt="Логоти" />
+            </div>
+            <div class="product-text__title">
+              Угольные фильтры <span>Magic Air 2.0 </span>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container about-container">
+            <div class="about__image">
+              <img src="./img/page-filter/about/banner.jpg" alt="Баннер" />
+            </div>
+            <div class="about__info about-info">
+              <div class="about-info__title">
+                Собственное производство угольных фильтров Magic Air
+              </div>
+              <div class="about-info__desc">
+                С 2016 года мы производим угольные фильтры Magic Air. Порошковая
+                покраска деталей, новая сетка и дополнительный каркас
+                из пенопласта не оставят равнодушных!
+              </div>
+							<button class="btn-green about-info__btn">Получить прайс</button>
+            </div>
+          </div>
+        </section>
+				<section class="slider">
+					<div class="container">
+						<div class="slider__content slider-content">
+							<div class="slider-content__thumbs sc-thumbs">
+								<div class="swiper sc-thumbs__slider">
+									<div class="swiper-wrapper">
+										<!-- slide -->
+										<div class="swiper-slide sc-thumbs__slide">
+											<img src="./img/page-filter/slider/main/one.jpg" alt="">
+										</div>
+										<!-- end of slide -->
+										<!-- slide -->
+										<div class="swiper-slide sc-thumbs__slide">
+											<img src="./img/page-filter/slider/main/two.jpg" alt="">
+										</div>
+										<!-- end of slide -->
+										<!-- slide -->
+										<div class="swiper-slide sc-thumbs__slide">
+											<img src="./img/page-filter/slider/main/three.jpg" alt="">
+										</div>
+										<!-- end of slide -->
+									</div>
+								</div>
+								<div class="swiper-button-prev sc-thumbs-prev"></div>
+								<div class="swiper-button-next sc-thumbs-next"></div>
+							</div>
+							<div class="slider-content__main sc-main">
+								<div class="swiper sc-main__slider">
+									<div class="swiper-wrapper">
+										<!-- slide -->
+										<div class="swiper-slide sc-main__slide">
+											<img src="./img/page-filter/slider/main/one.jpg" alt="">
+										</div>
+										<!-- end of slide -->
+										<!-- slide -->
+										<div class="swiper-slide sc-main__slide">
+											<img src="./img/page-filter/slider/main/two.jpg" alt="">
+										</div>
+										<!-- end of slide -->
+										<!-- slide -->
+										<div class="swiper-slide sc-main__slide">
+											<img src="./img/page-filter/slider/main/three.jpg" alt="">
+										</div>
+										<!-- end of slide -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+      </main>
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer__logo">
+            <img src="./img/footer/logo.svg" alt="Логотип" />
+          </div>
+          <div class="footer__contacts footer-contacts">
+            <div class="footer-contacts__title">Контакты</div>
+            <ul class="footer-contacts__list">
+              <li><span>Телефон:</span> +7 (800) 360 50-78</li>
+              <li><span>WhatsApp:</span> +7 (969) 777 29-01</li>
+              <li><span>Эл. почта:</span> sale@growdealer.ru</li>
+              <li><span>Адрес:</span> ул. Монастырская, 95г</li>
+              <li><span>Время работы:</span> 10:00 — 18:00</li>
+            </ul>
+          </div>
+          <div class="footer__products footer-products">
+            <div class="footer-products__title">Наши продукты</div>
+            <ul class="footer-products__list">
+              <li><a href="#">Advanced Nutrients</a></li>
+              <li><a href="#">Magic Air</a></li>
+              <li><a href="#">Magic Cloud</a></li>
+            </ul>
+          </div>
+          <div class="footer__info footer-info">
+            <div class="footer-info__title">Информация</div>
+            <ul class="footer-info__list">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__socials footer-socials">
+            <div class="footer-socials__item">
+              <svg><use xlink:href="./img/sprites.svg#facebook"></use></svg>
+            </div>
+            <div class="footer-socials__item">
+              <svg><use xlink:href="./img/sprites.svg#instagram"></use></svg>
+            </div>
+            <div class="footer-socials__item">
+              <svg><use xlink:href="./img/sprites.svg#telegram"></use></svg>
+            </div>
+            <div class="footer-socials__item">
+              <svg><use xlink:href="./img/sprites.svg#youtube"></use></svg>
+            </div>
+            <div class="footer-socials__item">
+              <svg><use xlink:href="./img/sprites.svg#vk"></use></svg>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
